@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Task Manager</title>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex">
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+	<body>
+		<div id="wrapper">
+      <header>
+        <h1>Task Manager</h1>
+      </header>
+      <div id="registration" class="center">
+        <label for="login-email" id="user-login-email">Email: </label>
+        <input type="text" name="loginemail" id="login-email">
+        <label for="login-password" id="user-login-password">Password:</label>
+        <input type="password" name="loginpassword" id="login-password">
+        <button id="log-in">Log in</button>
+        
+        <p id="login-error"></p>
+        
+        <div id="registration-fields">
+          <div>
+            <button id="register">Register</button>
+          </div>
+          <label for="register-email" id="email-label"></label>
+          <label for="register-password" id="password-label"></label>
+          <label for="register-firstName" id="firstName-label"></label>
+          <label for="register-lastName" id="lastName-label"></label>
+          <div id="registerUserButtonDiv"></div>
+          <p id="registration-error"></p>
+        </div>
+      </div>
+      <div id ="notLoggedIn">
+      <div class="center">
+      <!----UPDATE TASK---->
+      <!--<button id="generate-button">Generate Random Task</button>
+      <p id="random-task-text">Need an idea?</p>
+      <label for="task-selector">Select task to update:</label>
+      <input type="text" name="taskSelector" id="task-selector" value="1" style="width:50px">
+      <button id="update-search-task-button">Get task</button>
+      <div id="update-fields">
+        
+          <label for="task-name-update" id="name-label"></label>
+          <label for="task-desc-update" id="desc-label"></label>
+          <label for="task-date-update" id="date-label"></label>
+          <label for="task-completed-update" id="completed-label"></label>
+          <label for="task-importance-update" id="importance-label"></label>
+          <div id=buttonUpdate></div>
+        </div>
+      </div>-->
+      <div id="center">
+        <p id="welcome-message"></p>
+        <label for="task-input">Task:</label>
+        <input type="text" name="mytask" id="task-input" value="Task">
+        <label for="task-desc">Description:</label>
+        <input type="text" name="mydesc" id="task-desc" value="desc">
+        <label for="task-date">Date:</label>
+        <input type="date" name="mydate" id="task-date" value="2019-03-20" min="2019-03-15"> 
+        <label for="task-importance">Importance:</label>
+        <input type="text" name="myimportance" id="task-importance" value="0">
+        <button id="task-button">Add to list</button>
+      </div>
+      <table>
+
+        <thead>
+          <th>#</th>
+          <th>Task</th>
+          <th>Description</th>
+          <th>Date</th>
+          <th id="completed-width">Completed?</th>
+          <th>Importance</th>
+          <th>Delete</th>
+        </thead>
+        <tbody id="task-table"></tbody>
+      </table>
+      <ol id="todo-list">
+
+      </ol>
+    </div>
+		</div>
+    <script src="app.js"></script>
+	</body>
+</html>
